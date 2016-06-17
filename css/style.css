@@ -1,32 +1,32 @@
 #show-contact {
   display: none;
 }
-
-.text-center {
-  text-align: center;
+h1, h2, h3, h4, h5 {
+font-family: 'Dosis', sans-serif;
+font-weight: 800;
+}
+label {
+    font-size: 50px;
+    border: 1px solid grey;
+    cursor: pointer;
+    display: block;
+}
+input[type="checkbox"], [type="radio"] {
+    position:absolute;
+    clip: rect(0,0,0,0);
+    clip: rect(0 0 0 0);
 }
 
-.btn-get-rollin {
-  margin-top: 40px;
+input[type="checkbox"] + label::before {
+    content: url('');
 }
 
-.game-interface {
-  margin-top: 50px;
+input[type="checkbox"]:checked + label::after {
+    content: url('../img/thumbs-up.png');
+    padding-left: 30px;
 }
 
-.player-1-history li::before, .player-2-history li::before {
-  content: "Round = ";
-}
-
-ol {
-  list-style-position: inside;
-  padding: 0;
-}
-
-.player-1-score, .player-2-score {
-  border: 1px solid black;
-  padding: 30px;
-  display: inline-block;
-  font-size: 70px;
-  min-width: 50%;
+input[type="radio"]:checked + label::after {
+    content: url('../img/thumbs-up.png');
+    padding-left: 30px;
 }

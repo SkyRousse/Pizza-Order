@@ -4,6 +4,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis:400,800' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
@@ -13,44 +14,56 @@
     <div class="containter">
       <div class="row">
         <div class="col-sm-4 col-sm-offset-4">
+          <h1>Build Your Pizza</h1>
           <form id="order">
             <div class="form-group">
               <h4 class="form-input-headers">Toppings:</h4>
               <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="Pepperoncinis">Pepperoncinis</label>
+              <input id="Pepperoncinis" type="checkbox" name="toppings" value="Pepperoncinis">
+              <label for="Pepperoncinis">Pepperoncinis</label>
               </div>
               <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="Roasted Garlic">Roasted Garlic</label>
+              <input type="checkbox" name="toppings" id="garlic" value="Roasted Garlic">
+              <label for="garlic">Roasted Garlic</label>
               </div>
               <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="Mushrooms">Mushrooms</label>
+              <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+              <label for="mushrooms">Mushrooms</label>
               </div>
               <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="Kalamatas">Kalamatas</label>
+              <input type="checkbox" id="kalamatas" name="toppings" value="Kalamatas">
+              <label for="kalamatas">Kalamatas</label>
               </div>
               <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="Artichokes">Artichokes</label>
+              <input type="checkbox" id="artichokes" name="toppings" value="Artichokes">
+              <label for="artichokes">Artichokes</label>
               </div>
               <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="Basil">Basil</label>
+              <input type="checkbox" id="basil" name="toppings" value="Basil">
+              <label for="basil">Basil</label>
               </div>
               <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="Black Olives">Black Olives</label>
+              <input type="checkbox" id="black-olives" name="toppings" value="Black Olives">
+              <label for="black-olives">Black Olives</label>
               </div>
               <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="Spinach">Spinach</label>
+              <input type="checkbox" id="spinach" name="toppings" value="Spinach">
+              <label for="spinach">Spinach</label>
               </div>
             </div>
             <div class="form-group">
               <h4 class="form-input-headers">Size:</h4>
               <div class="radio">
-                <label><input type="radio" name="size" value="25">18"</label>
+                <input type="radio" id="large" name="size" value="25">
+                <label for="large">Large 18"</label>
               </div>
               <div class="radio">
-                <label><input type="radio" name="size" value="16">14"</label>
+                <input type="radio" id="medium" name="size" value="16">
+                <label for="medium">Medium 14"</label>
               </div>
               <div class="radio">
-                <label><input type="radio" name="size" value="14">12"</label>
+                <input type="radio" id="small" name="size" value="14">
+                <label for="small">Small 12"</label>
               </div>
               <div class="form-group">
                 <button type="submit">Place Order</button>

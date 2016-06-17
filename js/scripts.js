@@ -21,6 +21,6 @@ $(document).ready(function() {
       newPizza.pizzaToppings.push($(this).val());
     });
     var outputTotal = newPizza.calculateCost();
-    $(".outputTotal").text(outputTotal);
+    $(".outputTotal").text("Your Order Total is: $" + outputTotal);
   });//end submit function
 });//end doc ready function
