@@ -15,9 +15,9 @@ This is a project to practice using objects, object constructors and prototypes.
 ## Specifications
 | Behavior        | Input           | Outcome  |
 | ------------- |:-------------:| -----:|
-| Select toppings | click check boxes | "" |
-| Select Pizza Size | choose from a dropdown list |  |  
-| "Order" button | click the button | calculates the total cost of the pizza based on toppings, and size that were selected |
+| select toppings | click check boxes | selected items are saved in pizza object and output for display |
+| select pizza size | choose from a dropdown list | selected size is saved in the pizza object and output for display |  
+| "order" button | click the button | calculates the total cost of the pizza based on toppings, and size that were selected |
 
 
 ## Setup/Installation Requirements
