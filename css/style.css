@@ -27,6 +27,6 @@ input[type="checkbox"]:checked + label::after {
 }
 
 input[type="radio"]:checked + label::after {
-    content: url('../img/thumbs-up.png');
-    padding-left: 30px;
+    content: url('../img/pizza-icon-3.png');
+    max-width: 30px;
 }
