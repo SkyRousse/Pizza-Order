@@ -25,7 +25,9 @@ $(document).ready(function() {
         newPizza.pizzaToppings.push($(this).val());
       });
       var outputTotal = newPizza.calculateCost();
-      $(".outputTotal").text("Your Order Total is: $" + outputTotal);
+      $(".outputSize").append("<h4>The base price of the selected pizza size is: $" + newPizza.pizzaSize + "</h4>");
+      $(".outputIngredients").append("<h4>Each Topping is $3 you selected " + newPizza.pizzaToppings.length + " toppings" + "</h4>");
+      $(".outputTotal").append("<h2>Your Order Total is: $" + outputTotal + "</h2>");
     }
   });//end submit function
 });//end doc ready function
