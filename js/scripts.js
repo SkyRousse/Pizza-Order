@@ -14,7 +14,6 @@
 $(document).ready(function() {
   $("form#order").submit(function(event) {
     event.preventDefault();
-        debugger;
     var inputtedSize = parseInt($("input[type='radio'][name='size']:checked").val());
     if(inputtedSize !== 14 && inputtedSize !== 16 && inputtedSize !== 25) {
       alert("you must select a size");

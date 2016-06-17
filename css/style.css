@@ -3,12 +3,14 @@ h1, h2, h3, h4, h5 {
 font-family: 'Dosis', sans-serif;
 font-weight: 800;
 }
+
 label {
-    font-size: 50px;
+    font-size: 42px;
     border: 1px solid grey;
     cursor: pointer;
     display: block;
 }
+
 input[type="checkbox"], [type="radio"] {
     position:absolute;
     clip: rect(0,0,0,0);
@@ -26,5 +28,10 @@ input[type="checkbox"]:checked + label::after {
 
 input[type="radio"]:checked + label::after {
     content: url('../img/pizza-icon-3.png');
-    max-width: 30px;
+    padding-left: 30px;
+}
+
+#order button {
+  padding:12px;
+  margin-top: 10px;
 }
